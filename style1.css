@@ -1,0 +1,432 @@
+/* Importing social media icons for footer */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* Setting up html */
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #65944d;
+}
+
+/* --- NAVIGATION BAR --- */
+
+/* This code styles the navigation bar */
+
+.topnav {
+	font-family: 'Poppins', sans-serif; 
+	font-weight: 500;
+	overflow: hidden;
+	background-color: #35611f;
+	display: flex;  /* keeps navigation bar in the same position even as the user scrolls the page */
+	justify-content: center; /* Prevents any content that exceeds the boundaries of the element's box to overlap*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 5px 20px 0px 20px; /* Set spacing inside the element */
+}
+
+.topnav a {
+	display: flex;
+	justify-content: center;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 8px 20px 10px 20px;
+	text-decoration: none; /* Removes the underline under the text */
+	background-color: transparent; /* Underline to be transparent to match topnav background-color */
+	transition: background-color 0.5s; /* Transition for smoother hover effect */
+}
+
+.topnav a:hover {
+	border-bottom: 3px solid #e5f9db;
+	transition: border-bottom 0.1s; /* Transition for smoother hover effect */
+}
+
+.topnav a.active {
+	border-bottom: 3px solid #ffffff; /* Keeps underline visible on topnav when specific page is being viewed */
+}
+
+/* --- HEADER --- */
+
+/* Styling Header for all pages */
+header {
+	color: #ffffff;
+	padding: 40px 10px 10px 10px;
+	text-align: center;
+}
+
+/* Styling the attributes within the header (h1, p, img) */
+header h1 {
+	margin: 0;
+	margin-top: 40px;
+	font-size: 48px;
+	padding-bottom: 10px;
+}
+
+header p {
+	font-size: 17px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+header img {
+	right: 50%;
+	margin-left: 500px;
+}
+
+/* --- MAIN CONTENT --- */
+
+/* Setting the main content width and style */
+main {
+	border-radius: 15px;
+	width: 50%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #e5f9db;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	color: #35611F;
+}
+
+/* Setting annd styling the section */
+section {
+	margin-bottom: 20px;
+}
+
+section p {
+	line-height: 1.5;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #35611F;
+}
+
+section h2 {
+	margin-top: 0;
+	margin-bottom: 2px;
+	font-size: 24px;
+	color: #35611F;
+	border-bottom: 1px solid #293241;
+	padding-bottom: 10px;
+}
+
+/* Setting annd styling the list */
+ul {
+	margin-top: 2px;
+	margin-right: 10px;
+	padding: 1;
+	color: #35611F;
+	font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+	line-height: 1.5;
+
+}
+
+/* Resizing of Images */
+
+.person-id-image-1 {
+	width: 200px;
+	height: 20%;
+}
+
+.wendys-resized-image-2 {
+	width: 40%;
+	/* using % instead of px will keep at this % even when resizing the page viewport */
+	height: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 2px;
+}
+
+.delirious-resized-image-3 {
+	width: 40%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 2px;
+}
+
+.poster-resized-image-4 {
+	width: 40%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 2px;
+}
+
+.google-resized-image-5 {
+	width: 41%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 2px;
+}
+
+
+/* Carousel Styling for the Personal Page */
+
+/* Setting the max width & padding of the carousel container */
+.container { 
+	max-width: 1044px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Defines the main carousel container */
+.carousel {
+	display: block;
+	text-align: left;
+	position: relative;
+	margin-bottom: 22px;
+
+	>input {
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+
+		&:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: -500%;
+		}
+
+		&:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: -400%;
+		}
+
+		&:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: -300%;
+		}
+
+		&:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: -200%;
+		}
+
+		&:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: -100%;
+		}
+
+		&:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+			margin-left: 0%;
+		}
+
+		&:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+
+		&:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+
+		&:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+
+		&:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+
+		&:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+
+		&:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+			box-shadow: 0px 0px 0px 2px #35611f;
+			border-radius: 10%
+		}
+	}
+}
+
+/*  Styling the container for carousel slides  */
+.carousel__slides {
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	display: flex;
+}
+
+/*  Styling individual carousel slides for the container  */
+.carousel__slide {
+	position: relative;
+	display: block;
+	flex: 1 0 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: all 300ms ease-out;
+	vertical-align: top;
+	box-sizing: border-box;
+	white-space: normal;
+	width: 100%;
+	height: 100%;
+
+	figure {
+		display: flex;
+		margin: 0;
+	}
+
+	div {
+		@include aspect-ratio(3, 2);
+		width: 100%;
+	}
+
+	img {
+		display: block;
+		flex: 1 1 auto;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		border-radius: 5%;
+	}
+
+	figcaption {
+		align-self: center;
+		padding: 20px 20px 0 20px;
+		flex: 0 0 auto;
+		width: 25%;
+		min-width: 200px;
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.credit {
+		margin-top: 1rem;
+		display: block;
+	}
+
+	&.scrollable {
+		overflow-y: scroll;
+	}
+}
+
+/* Styling the container for carousel thumbnails */
+.carousel__thumbnails {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+
+	margin: 0 -10px;
+
+	.carousel__slides+& {
+		margin-top: 20px;
+	}
+
+	li {
+		flex: 1 1 auto;
+		max-width: calc((100% / 6) - 20px);
+		margin: 0 10px;
+		transition: all 300ms ease-in-out;
+	}
+
+	label {
+		display: block;
+		@include aspect-ratio(1, 1);
+
+
+		&:hover,
+		&:focus {
+			cursor: pointer;
+
+			img {
+				box-shadow: 0px 0px 0px 1px #153306;
+				transition: all 300ms ease-in-out;
+			}
+		}
+	}
+	
+	/* Styling images within both slides & thumbnails */
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10%;
+	}
+}
+
+
+/* --- FOOTER --- */
+
+/* Footer Styling for All pages  */
+footer {
+	background-color: #153306;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	padding: 1px;
+	width: auto;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	font-style: normal;
+}
+
+footer p {
+	line-height: 10px;
+}
+
+/* Setting up the social media icon placement*/
+.fa {
+	padding: 10px 1px 5px;
+	font-size: 24px;
+	width: 35px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Hover effect for social media icons */
+.fa:hover {
+	opacity: 0.5;
+}
+
+/* Twitter Icon Styling*/
+.fa-twitter {
+	color: white;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+/* Facebook Icon Styling*/
+.fa-facebook {
+	color: white;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+/* Instagram Icon Styling */
+.fa-instagram {
+	color: white;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
